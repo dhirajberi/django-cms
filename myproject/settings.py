@@ -210,6 +210,8 @@ CMS_TEMPLATES = (
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right'),
     ('index.htm', 'myproject'),
+    ('about.htm', 'about'),
+    ('contact.htm', 'contact'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
