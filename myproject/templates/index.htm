@@ -1,0 +1,33 @@
+{%load cms_tags menu_tags sekizai_tags%}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% render_block "css" %}
+</head>
+<body>
+    {% cms_toolbar %}
+    <div class="container">
+        <ul class="nav">
+            <!-- {% show_menu 0 100 100 100 %} -->
+        </ul>
+        
+    </div>
+    <h1>This is my homepage</h1>
+    <p>Basic project of Django CMS.</p>
+
+    {% block content1 %}
+            {%placeholder "content1" %}
+    {% endblock content1 %}
+
+    {% block content2 %}
+        {%placeholder "content2" %}
+    {% endblock content2 %}
+
+    {% render_block "js" %}
+</body>
+</html>
